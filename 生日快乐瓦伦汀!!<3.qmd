@@ -1,0 +1,275 @@
+---
+title: "生日快乐瓦伦汀!!<3"
+author: "西娜"
+format:
+  html:
+    page-layout: full
+    theme: cosmo
+    toc: false
+---
+
+<style>
+body {
+  background: #EBFFFA;
+  background-image:
+    radial-gradient(#ff7aa2 2px, transparent 2px),
+    radial-gradient(#7adfff 2px, transparent 2px),
+    radial-gradient(#ffd166 2px, transparent 2px);
+
+  background-size: 120px 120px;
+  background-position:
+    0 0,
+    40px 60px,
+    80px 20px;
+}
+
+.hero {
+  padding: 80px 20px 40px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: #45CCCC;
+}
+
+.section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 28px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.machine {
+  max-width: 420px;
+  margin: 30px auto;
+  padding: 30px;
+  background: #FDFFA6;
+  border-radius: 30px;
+  border: 8px solid #FDFFA6;
+  color: turquoise;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.machine-window {
+  background: beige;
+  color: #DBFFF5;
+  min-height: 120px;
+  border-radius: 20px;
+  padding: 25px;
+  margin: 20px 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background: #DBFFF5;
+  color: #59D4CC;
+  border: none;
+  padding: 15px 24px;
+  border-radius: 999px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.spinning-text {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: white;
+  animation: pulse 0.8s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+}
+
+.voucher {
+  background: #FFEBFA;
+  border: 3px dashed #FFD1FA;
+  border-radius: 18px;
+  padding: 18px;
+  color: #333;
+  animation: slideOut 0.7s ease;
+}
+
+.voucher h3 {
+  margin-top: 0;
+  color: #FC65DA;
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(-20px) scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.photo-placeholder {
+  border: 3px dashed #ffb6c9;
+  padding: 40px;
+  border-radius: 20px;
+  color: #888;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.photo-gallery img {
+  width: 100%;
+  height: 1500px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+</style>
+
+
+<div class="hero">
+
+# Happy Birthday Valentin!
+
+Will i leider hüt ned bi dier sii kan do a kliini digitali Überrasching für di 💌
+
+
+<div class="section">
+
+## <3
+### Mier hend scho so viel schöni Erinneriga zäma dörfa sammla, do es paar vo mina favorita hihi. Du bisch so en wunderschöna Mensch (inside and out!) und i bin eifach mega dankbar dass es di git. 
+
+<div class="photo-gallery">
+  <img src="Fotis/museum-foti.jpg">
+  <img src="Fotis/flattering.jpg">
+  <img src="Fotis/frisal-selfie.jpg">
+  <img src="Fotis/sixpack.jpg">
+  <img src="Fotis/puglia-selfie.jpg">
+</div>
+
+<div class="section">
+
+## Bisch parat für dis Geschenk? 🎁
+
+<div class="machine">
+  <h2>Gschenkli-Generator</h2>
+  <div class="machine-window" id="result">
+    Hmm was wirds wohl...?
+    Spin the button to find out!
+  </div>
+  <button id="spinButton" onclick="spinGift()">Zeig Gschenk mann!</button>
+</div>
+
+</div>
+
+<div class="section">
+
+## ✨Kleiner Disclaimer✨
+
+Du kasch so lang spinne bis mit dinem Gschenk zfrieda bisch! Kumulativi Gschenk sind in Usnahmefäll au möglich ;)
+
+</div>
+
+<div class="section">
+
+## Hab dich lieb, gnüss din Tag! 💗
+
+<script>
+const gifts = [
+  {
+    title: "Reiserucksack",
+    text: "Damit du ready bisch für China!"
+  },
+  {
+    title: "Ventilator",
+    text: "Für en küahla Kopf während da Lernphasa!"
+  },
+  {
+    title: "Movie-Live-Konzert im KKL",
+    text: "De James het ahglüta, er exSPECTREd dini Hilf bim Martinis schlürfa!"
+  },
+  {
+    title: "Gala-Dinner @home",
+    text: "Capuns, Maluns oder andera Brunz...lass dich überraschen"
+  }
+];
+
+function spinGift() {
+  const result = document.getElementById("result");
+  const button = document.getElementById("spinButton");
+
+  result.innerHTML = '<span style="font-size: 1.5rem; color: #59D4CC; font-weight: bold;">Trommelwirbel... 🎰</span>';
+  button.disabled = true;
+
+
+  setTimeout(() => {
+    const gift = gifts[Math.floor(Math.random() * gifts.length)];
+
+    result.innerHTML = `
+      <div class="voucher">
+        <h3>${gift.title}</h3>
+        <p>${gift.text}</p>
+      </div>
+    `;
+
+    button.innerHTML = "I will aber öppis anders!";
+    button.disabled = false;
+
+    confetti();
+  }, 1300);
+}
+
+function confetti() {
+  for (let i = 0; i < 35; i++) {
+    const piece = document.createElement("div");
+    piece.innerHTML = "⭐️";
+    piece.style.position = "fixed";
+    piece.style.left = Math.random() * 100 + "vw";
+    piece.style.top = "-20px";
+    piece.style.fontSize = "24px";
+    piece.style.zIndex = 9999;
+    piece.style.animation = `fall ${2 + Math.random() * 2}s linear forwards`;
+    document.body.appendChild(piece);
+
+    setTimeout(() => piece.remove(), 4000);
+  }
+}
+
+const style = document.createElement("style");
+style.innerHTML = `
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+`;
+document.head.appendChild(style);
+</script>
+---
+
+## 
