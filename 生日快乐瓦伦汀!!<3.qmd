@@ -164,7 +164,7 @@ Will i leider hüt ned bi dier sii kan do a kliini digitali Überrasching für d
 ### Mier hend scho so viel schöni Erinneriga zäma dörfa sammla, do es paar vo mina favorita hihi. Du bisch so en wunderschöna Mensch (inside and out!) und i bin eifach mega dankbar dass es di git. 
 
 <div class="photo-gallery">
-  <img src="Fotis/museum-foti.jpg">
+  <img src="Fotis/Museum-foti.jpg">
   <img src="Fotis/flattering.jpg">
   <img src="Fotis/frisal-selfie.jpg">
   <img src="Fotis/sixpack.jpg">
